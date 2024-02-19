@@ -1,0 +1,1365 @@
+{
+  "id": 39409650,
+  "title": "Ollama is now available on Windows in preview",
+  "points": 355,
+  "user": "pentagrama",
+  "time": 1708179827,
+  "time_ago": "2 days ago",
+  "type": "link",
+  "url": "https://ollama.com/blog/windows-preview",
+  "domain": "ollama.com",
+  "comments": [
+    {
+      "id": 39412058,
+      "level": 0,
+      "user": "visarga",
+      "time": 1708194972,
+      "time_ago": "a day ago",
+      "content": "<p>I am running this on my desktop, using Open-WebUI for the front-end. I have a collection of a dozen or so fine-tunes of Mistral and a few other models. They are good enough for chatting and doing some information extraction tasks. The Open-WebUI app looks a lot like chatGPT. You can even search your conversations.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;open-webui&#x2F;open-webui\">https:&#x2F;&#x2F;github.com&#x2F;open-webui&#x2F;open-webui</a>",
+      "comments": [
+        {
+          "id": 39412763,
+          "level": 1,
+          "user": "lolinder",
+          "time": 1708199118,
+          "time_ago": "a day ago",
+          "content": "<p>For anyone else who missed the announcement a few hours ago, open-webui is the rebranding of the project formerly known as ollama-webui [0].<p>I can vouch for it as a solid frontend for Ollama. It works really well and has had an astounding pace of development. Every few weeks I pull the latest docker images and am always surprised by how much has improved.<p>[0] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;open-webui&#x2F;open-webui&#x2F;discussions&#x2F;764\">https:&#x2F;&#x2F;github.com&#x2F;open-webui&#x2F;open-webui&#x2F;discussions&#x2F;764</a>",
+          "comments": []
+        },
+        {
+          "id": 39413651,
+          "level": 1,
+          "user": "scratchyone",
+          "time": 1708204799,
+          "time_ago": "a day ago",
+          "content": "<p>Out of curiosity, what&#x27;re you using the fine-tunes for? Do you fine-tune them on your own data or are they just publicly available models you use for different tasks?",
+          "comments": [
+            {
+              "id": 39413752,
+              "level": 2,
+              "user": "visarga",
+              "time": 1708205658,
+              "time_ago": "a day ago",
+              "content": "<p>I am just loading GGUF models from HuggingFace that have good scores in the benchmarks, and running my private eval set from  my current project. Some of the merged models are surprisingly good compared with simple fine-tunes.",
+              "comments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39411901,
+      "level": 0,
+      "user": "Klaster_1",
+      "time": 1708194026,
+      "time_ago": "a day ago",
+      "content": "<p>As usual, no AMD GPU support mentioned. What a sad state of affair, I regret going with AMD this time.",
+      "comments": [
+        {
+          "id": 39413715,
+          "level": 1,
+          "user": "jmorgan",
+          "time": 1708205390,
+          "time_ago": "a day ago",
+          "content": "<p>AMD GPU support is definitely an important part of the project roadmap (sorry this isn&#x27;t better published in a ROADMAP.md or similar for the project – will do that soon).<p>A few of the maintainers of the project are from the Toronto area, the original home of ATI technologies [1], and so we personally want to see Ollama work well on AMD GPUs :).<p>One of the test machines we use to work on AMD support for Ollama is running a Radeon RX 7900XT, and it&#x27;s quite fast. Definitely comparable to a high-end GeForce 40 series GPU.<p>[1]: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;ATI_Technologies\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;ATI_Technologies</a>",
+          "comments": [
+            {
+              "id": 39414423,
+              "level": 2,
+              "user": "FirmwareBurner",
+              "time": 1708211302,
+              "time_ago": "a day ago",
+              "content": "<p>What about AMD APUs with RDNA graphics? ANy chance of getting Olama for them?",
+              "comments": [
+                {
+                  "id": 39415173,
+                  "level": 3,
+                  "user": "spookie",
+                  "time": 1708218951,
+                  "time_ago": "a day ago",
+                  "content": "<p>I suppose it comes down to ROCm support.\n<a href=\"https:&#x2F;&#x2F;docs.amd.com&#x2F;en&#x2F;docs-5.7.1&#x2F;release&#x2F;windows_support.html\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.amd.com&#x2F;en&#x2F;docs-5.7.1&#x2F;release&#x2F;windows_support.h...</a>",
+                  "comments": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39411997,
+          "level": 1,
+          "user": "freedomben",
+          "time": 1708194589,
+          "time_ago": "a day ago",
+          "content": "<p>Same.  I really want AMD to succeed because as a long time Linux user I have strong distaste for Nvidia and the hell they put me through.  I paid <i>a lot</i> for a beastly AMD card in the hopes that it would be shortly behind Nvidia and that has most definitely not been the case, and I blame AMD for not putting the resources behind it.<p>AMD, you can change, but you need to start NOW.",
+          "comments": [
+            {
+              "id": 39412031,
+              "level": 2,
+              "user": "mchiang",
+              "time": 1708194837,
+              "time_ago": "a day ago",
+              "content": "<p>Hi, we’ve been working to support AMD GPUs directly via ROCm. It’s still under development but if you build from source it does work:<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama&#x2F;blob&#x2F;main&#x2F;docs&#x2F;development.md#linux-rocm-amd\">https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama&#x2F;blob&#x2F;main&#x2F;docs&#x2F;development....</a>",
+              "comments": [
+                {
+                  "id": 39412114,
+                  "level": 3,
+                  "user": "Filligree",
+                  "time": 1708195314,
+                  "time_ago": "a day ago",
+                  "content": "<p>Every time I try to run anything through ROCm, my machine kernel-panics.<p>I’m not blaming you for this, but I’m also sticking with nvidia.",
+                  "comments": [
+                    {
+                      "id": 39412204,
+                      "level": 4,
+                      "user": "mchiang",
+                      "time": 1708195757,
+                      "time_ago": "a day ago",
+                      "content": "<p>Really sorry about this. Do you happen to have logs for us to look into? This is definitely not the way we want",
+                      "comments": [
+                        {
+                          "id": 39413714,
+                          "level": 5,
+                          "user": "Filligree",
+                          "time": 1708205386,
+                          "time_ago": "a day ago",
+                          "content": "<p>To be clearer, it isn&#x27;t Ollama-specific. I first encountered the issue with Stable Diffusion, and it&#x27;s remained since, but the GPU that causes it isn&#x27;t currently inside any machine; I replaced it with a 3090 a few days ago.",
+                          "comments": []
+                        },
+                        {
+                          "id": 39418081,
+                          "level": 5,
+                          "user": "weebull",
+                          "time": 1708254131,
+                          "time_ago": "16 hours ago",
+                          "content": "<p>I&#x27;d recommend trying stuff that exhausts the VRAM. That seems to be where thinks get flakey for me (RX 7600 - 8GB), especially if running a desktop too.",
+                          "comments": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 39416271,
+                      "level": 4,
+                      "user": "superkuh",
+                      "time": 1708231283,
+                      "time_ago": "a day ago",
+                      "content": "<p>And you&#x27;re the lucky one getting the chance to kernel panic with ROCm. AMD drops ROCm support for their consumer GPUs so fast it&#x27;ll make your head spin. I bought my GPU for $230 in 2020 and by 2021 AMD had dropped support for it. Just a bit under 4 years after the card&#x27;s release on market.",
+                      "comments": []
+                    }
+                  ]
+                },
+                {
+                  "id": 39412814,
+                  "level": 3,
+                  "user": "agartner",
+                  "time": 1708199402,
+                  "time_ago": "a day ago",
+                  "content": "<p>Working well for me on a 7900XT with ROCm 6 and Linux 6.7.5 thanks!",
+                  "comments": [
+                    {
+                      "id": 39422038,
+                      "level": 4,
+                      "user": "antman",
+                      "time": 1708283320,
+                      "time_ago": "8 hours ago",
+                      "content": "<p>What is the speedup vs cpu?",
+                      "comments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 39419798,
+              "level": 2,
+              "user": "zare_st",
+              "time": 1708270068,
+              "time_ago": "11 hours ago",
+              "content": "<p>Curious how different a long time FreeBSD user feels. I have a strong distaste for anything not nvidia.<p>Official nvidia drivers have been added to FreeBSD repository 21 years ago.\nI can&#x27;t count the number of different types of drivers used for ATi&#x2F;AMD in these two decades. And none had the performance or stability.",
+              "comments": []
+            },
+            {
+              "id": 39412039,
+              "level": 2,
+              "user": "visarga",
+              "time": 1708194889,
+              "time_ago": "a day ago",
+              "content": "<p>Ollama is a model-management app that runs on top of llama.cpp so you should ask there about AMD support.",
+              "comments": [
+                {
+                  "id": 39412299,
+                  "level": 3,
+                  "user": "progman32",
+                  "time": 1708196287,
+                  "time_ago": "a day ago",
+                  "content": "<p>I&#x27;ve been running llama.cpp with full GPU acceleration on my AMD card, using the text-generation-webui install script on kubuntu. Same with stable diffusion using a1111. AMD&#x27;s compute stack is indeed quite broken and is more fragile, but it does work using most modern cards.<p>The kernel panics though... Yeah, I had those on my Radeon vii before I upgraded.",
+                  "comments": []
+                },
+                {
+                  "id": 39413040,
+                  "level": 3,
+                  "user": "65a",
+                  "time": 1708200640,
+                  "time_ago": "a day ago",
+                  "content": "<p>llama.cpp has had ROCm support for a long time",
+                  "comments": []
+                }
+              ]
+            },
+            {
+              "id": 39419305,
+              "level": 2,
+              "user": "karolist",
+              "time": 1708266236,
+              "time_ago": "12 hours ago",
+              "content": "<p>What hell specifically, do you mean loading binary blob drivers in the past?",
+              "comments": []
+            },
+            {
+              "id": 39412693,
+              "level": 2,
+              "user": "michaelmrose",
+              "time": 1708198719,
+              "time_ago": "a day ago",
+              "content": "<p>What problems have you had with AMD and in what fashion do they fall short of Nvidia?",
+              "comments": [
+                {
+                  "id": 39412803,
+                  "level": 3,
+                  "user": "freedomben",
+                  "time": 1708199344,
+                  "time_ago": "a day ago",
+                  "content": "<p>I&#x27;ve had no end of difficulty installing the Pro drivers and&#x2F;or ROCm.  The &quot;solution&quot; that was recommended was to install a different distro (I use Fedora and installing CentOS or Ubuntu was recommended).  When I finally <i>could</i> get it installed, I got kernel panics and my system frequently became unbootable.  Then once it was installed, getting user space programs to recognize it was the next major pain point.",
+                  "comments": [
+                    {
+                      "id": 39415972,
+                      "level": 4,
+                      "user": "slavik81",
+                      "time": 1708227792,
+                      "time_ago": "a day ago",
+                      "content": "<p>On Fedora 40, I believe you can install llama.cpp&#x27;s ROCm dependencies with:<p><pre><code>    dnf install hipcc rocm-hip-devel rocblas-devel hipblas-devel</code></pre>",
+                      "comments": [
+                        {
+                          "id": 39416699,
+                          "level": 5,
+                          "user": "slavik81",
+                          "time": 1708237430,
+                          "time_ago": "20 hours ago",
+                          "content": "<p>So, after a bit of experimentation, it seems that Fedora is built primarily for RDNA 3 while Debian is built for RDNA 2 and earlier. These are llama-cpp build instructions for Fedora: <a href=\"https:&#x2F;&#x2F;gist.github.com&#x2F;cgmb&#x2F;bb661fccaf041d3649f9a90560826ebc\" rel=\"nofollow\">https:&#x2F;&#x2F;gist.github.com&#x2F;cgmb&#x2F;bb661fccaf041d3649f9a90560826eb...</a>. These are llama-cpp build instructions for Debian: <a href=\"https:&#x2F;&#x2F;gist.github.com&#x2F;cgmb&#x2F;be113c04cd740425f637aa33c3e4ea33\" rel=\"nofollow\">https:&#x2F;&#x2F;gist.github.com&#x2F;cgmb&#x2F;be113c04cd740425f637aa33c3e4ea3...</a>.",
+                          "comments": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 39413451,
+                      "level": 4,
+                      "user": "michaelmrose",
+                      "time": 1708203236,
+                      "time_ago": "a day ago",
+                      "content": "<p>I&#x27;ve been using Nvidia and it stopped being challenging in about 2006. I hear perpetually that Nvidia is horrible and I should try AMD. The 2 times I did admitted a long time ago it was... not great.",
+                      "comments": [
+                        {
+                          "id": 39413524,
+                          "level": 5,
+                          "user": "freedomben",
+                          "time": 1708203721,
+                          "time_ago": "a day ago",
+                          "content": "<p>Do you use Ubuntu LTS?  If so, then indeed Nvidia is not a problem.<p>But if you run a distro that has anywhere near new kernels such as Fedora and Arch, you&#x27;ll be constantly in fear of receiving new kernel updates.  And every so often the packages will be broken and you&#x27;ll have to use Nvidia&#x27;s horrible installer.  Oh and every once in a while they&#x27;ll subtly drop support for older cards and you&#x27;ll need to move to the legacy package, but the way you&#x27;ll find out is that your system suddenly doesn&#x27;t boot and you just happen to think about it being the old Nvidia card so you Kagi that and discover the change.",
+                          "comments": [
+                            {
+                              "id": 39413893,
+                              "level": 6,
+                              "user": "65a",
+                              "time": 1708206736,
+                              "time_ago": "a day ago",
+                              "content": "<p>I found it much easier to make ROCm&#x2F;AMD work for AI (including on an laptop) than getting nvidia work with Xorg on an optimus laptop with an intel iGPU&#x2F;nvidia dGPU. I swore off nvidia at that point.",
+                              "comments": []
+                            },
+                            {
+                              "id": 39415212,
+                              "level": 6,
+                              "user": "spookie",
+                              "time": 1708219245,
+                              "time_ago": "a day ago",
+                              "content": "<p>Try to use the runfile provided by Nvidia and use DKMS. The biggest issue is just that flatpaks aren&#x27;t really updated for CUDA drivers, but you can just not use them if your distro isn&#x27;t old or niche.",
+                              "comments": []
+                            },
+                            {
+                              "id": 39414629,
+                              "level": 6,
+                              "user": "michaelmrose",
+                              "time": 1708213573,
+                              "time_ago": "a day ago",
+                              "content": "<p>Changing kernels automatically as new releases came out was never an optimal strategy even if its what you get by default in Arch. Notably arch has linux-lts presently at 6.6 whereas mainline is 6.7.<p>Instead of treating it like a dice roll and living in existential dread at the entirely predictable peril of Linus cutting releases that necessarily occasionally front run NVIDIA which releases less frequently I simply don&#x27;t install kernels first released yesterday, pull in major kernel version updates daily, don&#x27;t remove the old kernel automatically when the new one is installed, and automatically make snapshots on update against any sort of issue that might obtain.<p>If that seems like too much work one could simply at least keep the prior kernel version around and reboot and your only out 45 seconds of your life. This actually seems like a good idea no matter what.<p>I don&#x27;t think I have used nvidia&#x27;s installer since 2003 on Fedora &quot;Core&quot;–as the nomenclature used to be—One. One simply doesn&#x27;t need to. Also generally speaking one doesn&#x27;t need to use a legacy package until a card is over 10 years old. For instance the oldest consumer card unsupported right now is a 600 series from 2012.<p>If you still own a 2012 GPU you should probably put it where it belongs in the trash but when you get to the sort of computers that require legacy support which is 2009-2012 you are apt to need to worry about other matters like distros that still support 32 bit, simple environments like xfce, software that works well in ram constrained environments. Needing to install a slightly different driver seems tractable.",
+                              "comments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39413491,
+          "level": 1,
+          "user": "jart",
+          "time": 1708203493,
+          "time_ago": "a day ago",
+          "content": "<p>llamafile has amd gpu support. on windows, it only depends on the graphics driver, thanks to our tinyBLAS library.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;Mozilla-Ocho&#x2F;llamafile&#x2F;releases&#x2F;tag&#x2F;0.6.2\">https:&#x2F;&#x2F;github.com&#x2F;Mozilla-Ocho&#x2F;llamafile&#x2F;releases&#x2F;tag&#x2F;0.6.2</a><p>By default it opens a browser tab with a chat gui. You can run it as a cli chatbot like ollama as follows:<p><a href=\"https:&#x2F;&#x2F;justine.lol&#x2F;oneliners&#x2F;#chat\" rel=\"nofollow\">https:&#x2F;&#x2F;justine.lol&#x2F;oneliners&#x2F;#chat</a>",
+          "comments": [
+            {
+              "id": 39422072,
+              "level": 2,
+              "user": "antman",
+              "time": 1708283480,
+              "time_ago": "8 hours ago",
+              "content": "<p>Which amd cpus are supported by tinyBLAS&#x2F;llamafile?",
+              "comments": []
+            }
+          ]
+        },
+        {
+          "id": 39413180,
+          "level": 1,
+          "user": "peppermint_gum",
+          "time": 1708201393,
+          "time_ago": "a day ago",
+          "content": "<p>AMD clearly believes that this newfangled &quot;GPU compute&quot; fad will pass soon, so there&#x27;s no point to invest in it.<p>This is one of the worst acts of self-sabotage I have ever seen in the tech business.",
+          "comments": [
+            {
+              "id": 39413621,
+              "level": 2,
+              "user": "jart",
+              "time": 1708204504,
+              "time_ago": "a day ago",
+              "content": "<p>Zen4 AVX512 must be really good then.",
+              "comments": [
+                {
+                  "id": 39417963,
+                  "level": 3,
+                  "user": "imtringued",
+                  "time": 1708252712,
+                  "time_ago": "16 hours ago",
+                  "content": "<p>To be fair a lot of the GPU edge comes from fast memory. A GPU with 20tflops running a 30 billion parameter model has a compute budget of 700flops per parameter. Meanwhile the sheer size of the model prevents you from loading it more than 20 times from memory per second.",
+                  "comments": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39412979,
+          "level": 1,
+          "user": "chown",
+          "time": 1708200304,
+          "time_ago": "a day ago",
+          "content": "<p>As others have mentioned, Ollama uses Llama.CPP under the hood and they recently released Vulkan support which is supposed to work with AMD GPUs. I was able to use llama.cpu compiled with Vulkan support with my app [1] and make it run on an AMD laptop but I was unable to make it work with Ollama as it makes some assumptions about how it goes about searching for available GPUs on a machine.<p>[1]: <a href=\"https:&#x2F;&#x2F;msty.app\" rel=\"nofollow\">https:&#x2F;&#x2F;msty.app</a>",
+          "comments": [
+            {
+              "id": 39413731,
+              "level": 2,
+              "user": "Kelteseth",
+              "time": 1708205503,
+              "time_ago": "a day ago",
+              "content": "<p>I got a Windows defender Virus alert after executing your app.",
+              "comments": [
+                {
+                  "id": 39414522,
+                  "level": 3,
+                  "user": "chown",
+                  "time": 1708212229,
+                  "time_ago": "a day ago",
+                  "content": "<p>Ugh! Probably because it’s an exe app? Not sure how to go around about that. I am looking into getting it signed just like the counterpart MacOS app. Thank you for the heads up and sorry about the false positive.",
+                  "comments": [
+                    {
+                      "id": 39416241,
+                      "level": 4,
+                      "user": "rezonant",
+                      "time": 1708230892,
+                      "time_ago": "a day ago",
+                      "content": "<p>Ironically Ollama is also struggling with this sort of thing, see <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama&#x2F;issues&#x2F;2519\">https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama&#x2F;issues&#x2F;2519</a><p>Code signing helps by having an avenue by which you can establish reliable reputation, and then using VirusTotal to check for AV flags and using the AV vendor&#x27;s whitelist request form is the second part, over time your reputation increases and you don&#x27;t get flagged as malware.<p>It seems to be much more likely with AI stuff, apparently due to use of CUDA or something (&#x2F;shrug)",
+                      "comments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 39413913,
+              "level": 2,
+              "user": "65a",
+              "time": 1708206887,
+              "time_ago": "a day ago",
+              "content": "<p>ROCm is preferred over vulkan for AMD GPUs, performance wise. Using OpenCL or Vulkan should only be for older cards or weird setups.",
+              "comments": [
+                {
+                  "id": 39414523,
+                  "level": 3,
+                  "user": "chown",
+                  "time": 1708212258,
+                  "time_ago": "a day ago",
+                  "content": "<p>That’s good to know. Thank you!",
+                  "comments": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39412006,
+          "level": 1,
+          "user": "accelbred",
+          "time": 1708194667,
+          "time_ago": "a day ago",
+          "content": "<p>Ollama has a opencl backend. I&#x27;m on Linux and clblast works great with AMD cards. As far as I remember opencl on Windows did not have that much issues, but its been a while.",
+          "comments": []
+        },
+        {
+          "id": 39412015,
+          "level": 1,
+          "user": "gerwim",
+          "time": 1708194746,
+          "time_ago": "a day ago",
+          "content": "<p>Maybe there’s proper support soon in AI landscape [0].<p>[0]: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39344815\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39344815</a>",
+          "comments": []
+        },
+        {
+          "id": 39412725,
+          "level": 1,
+          "user": "RealStickman_",
+          "time": 1708198890,
+          "time_ago": "a day ago",
+          "content": "<p>I&#x27;ve had success using my AMD GPU with the OpenCL backend for llamacpp. The ROCm backend had pretty bad performance though.",
+          "comments": []
+        },
+        {
+          "id": 39413455,
+          "level": 1,
+          "user": "vdaea",
+          "time": 1708203247,
+          "time_ago": "a day ago",
+          "content": "<p>AMD is the underdog, and that&#x27;s what happens when you choose the underdog.",
+          "comments": [
+            {
+              "id": 39415357,
+              "level": 2,
+              "user": "Dalewyn",
+              "time": 1708221067,
+              "time_ago": "a day ago",
+              "content": "<p>I would argue we are well past the point of calling AMD an underdog.",
+              "comments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39421026,
+      "level": 0,
+      "user": "dsign",
+      "time": 1708277456,
+      "time_ago": "9 hours ago",
+      "content": "<p>I’m running Ollama with the hopes of putting together some grammar&#x2F;typo checking workflow for my writing. Not directly related to Ollama, which is working great so far, but does anybody know of any place I can turn to for questions? Like, some sort of stackoverflow for LLMs?",
+      "comments": []
+    },
+    {
+      "id": 39412916,
+      "level": 0,
+      "user": "chown",
+      "time": 1708199968,
+      "time_ago": "a day ago",
+      "content": "<p>If anyone is looking for a nice Chat UI on top of Ollama that supports both online models and local models, I’ve been working on an app [1] that is offline and privacy focused. I just released Windows support this morning.<p>[1]: <a href=\"https:&#x2F;&#x2F;msty.app\" rel=\"nofollow\">https:&#x2F;&#x2F;msty.app</a>",
+      "comments": [
+        {
+          "id": 39413472,
+          "level": 1,
+          "user": "vdaea",
+          "time": 1708203390,
+          "time_ago": "a day ago",
+          "content": "<p>I&#x27;m trying the Windows version. What really sticks out is that buttons don&#x27;t have tooltips. It&#x27;s impossible to know what they do if you don&#x27;t click them.<p>Also in the conversation view you have two buttons &quot;New Chat&quot; and &quot;Add Chat&quot; which do two different things but they both have the same keybind ^T",
+          "comments": [
+            {
+              "id": 39414081,
+              "level": 2,
+              "user": "chown",
+              "time": 1708208536,
+              "time_ago": "a day ago",
+              "content": "<p>Thanks for the feedback. I will get them resolved soon.",
+              "comments": [
+                {
+                  "id": 39414284,
+                  "level": 3,
+                  "user": "wlesieutre",
+                  "time": 1708210187,
+                  "time_ago": "a day ago",
+                  "content": "<p>I&#x27;m getting a lot of jank with the hovery-sidebar: <a href=\"https:&#x2F;&#x2F;imgur.com&#x2F;a&#x2F;VXZXL94\" rel=\"nofollow\">https:&#x2F;&#x2F;imgur.com&#x2F;a&#x2F;VXZXL94</a><p>Personally I&#x27;d rather have the sidebar be toggled on click, instead of having such a huge animation every time my mouse passes by. And if it&#x27;s such an important part of the UI that requiring a click is too much of a barrier, then it&#x27;d be better to build that functionality into a permanent sidebar rather than a buried under a level of sidebar buttons.<p>The sidebar on my Finder windows for example are about 150px wide, always visible, and fit more content than all three of Msty&#x27;s interchanging sidebars put together.<p>If I had a lot of previous conversations that might not be true anymore, but a single level sidebar with subheadings still works fine for things like Music where I can have a long list of playlists. If it&#x27;s too many conversations to reasonably include in an always visible list then maybe they go into a [More] section.<p>Current UI feels like I had to think a bit too much to understand how it&#x27;s organized.",
+                  "comments": [
+                    {
+                      "id": 39414336,
+                      "level": 4,
+                      "user": "chown",
+                      "time": 1708210624,
+                      "time_ago": "a day ago",
+                      "content": "<p>Ugh! That’s not the experience I wanted people to have. Sorry about that and I will be working on making the experience better. Feedback like yours really helps so thank you very much.",
+                      "comments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39413921,
+          "level": 1,
+          "user": "attentive",
+          "time": 1708206980,
+          "time_ago": "a day ago",
+          "content": "<p>btw, it triggers Program:Win32&#x2F;Wacapew.C!ml detection",
+          "comments": [
+            {
+              "id": 39414107,
+              "level": 2,
+              "user": "chown",
+              "time": 1708208710,
+              "time_ago": "a day ago",
+              "content": "<p>Hmmm… it’s a false positive. Is it Windows Defender or something else? Is it when you open the app or when you setup local AI? Not sure where I would send a request for it to be not flagged.",
+              "comments": [
+                {
+                  "id": 39414155,
+                  "level": 3,
+                  "user": "js4ever",
+                  "time": 1708209072,
+                  "time_ago": "a day ago",
+                  "content": "<p>It&#x27;s probably an issue with the tool you used to create the installer.<p>Few options: use another tool like the one included in visual studio, sign your exe with a certificate. Or publish it on the windows marketplace.<p>Now you understand why real desktop applications died a decade ago and now 99.99% of apps are using a web UI",
+                  "comments": [
+                    {
+                      "id": 39414308,
+                      "level": 4,
+                      "user": "dom96",
+                      "time": 1708210370,
+                      "time_ago": "a day ago",
+                      "content": "<p>I&#x27;d say it&#x27;s more an issue with the anti-virus that is flagging this as a virus when it isn&#x27;t one. We should expect better out of AV software. I&#x27;ve personally seen many instances of false positives across various software that was definitely not a virus.",
+                      "comments": [
+                        {
+                          "id": 39416256,
+                          "level": 5,
+                          "user": "rezonant",
+                          "time": 1708231033,
+                          "time_ago": "a day ago",
+                          "content": "<p>There seems to be something about what these AI apps do that causes the false positives, because Ollama itself <i>also</i> triggers Windows defender <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama&#x2F;issues&#x2F;2519\">https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama&#x2F;issues&#x2F;2519</a>",
+                          "comments": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 39414223,
+                      "level": 4,
+                      "user": "chown",
+                      "time": 1708209635,
+                      "time_ago": "a day ago",
+                      "content": "<p>That’s true and unfortunate. The MacOS installer is signed and I will be looking into signing the Windows installer. Thank you for your suggestions. My last experience of getting and signing a Windows installer was awful and goes back to what you were saying about desktop app dying a decade ago.",
+                      "comments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39413251,
+          "level": 1,
+          "user": "haliskerbas",
+          "time": 1708201788,
+          "time_ago": "a day ago",
+          "content": "<p>Off topic but what did you use to make your landing page?",
+          "comments": [
+            {
+              "id": 39413273,
+              "level": 2,
+              "user": "chown",
+              "time": 1708201912,
+              "time_ago": "a day ago",
+              "content": "<p>It’s a Nuxt static app but all hand rolled, no builder or anything like that if that’s what you are asking.",
+              "comments": [
+                {
+                  "id": 39413285,
+                  "level": 3,
+                  "user": "haliskerbas",
+                  "time": 1708201973,
+                  "time_ago": "a day ago",
+                  "content": "<p>That&#x27;s what I was looking for, I couldn&#x27;t find any elements or class names that I recognized in the code from the popular frameworks. Looks great!",
+                  "comments": [
+                    {
+                      "id": 39413331,
+                      "level": 4,
+                      "user": "chown",
+                      "time": 1708202312,
+                      "time_ago": "a day ago",
+                      "content": "<p>Thank you! I probably spent way too much time tweaking it. Haha! I am glad someone liked all the small details I was sweating on.",
+                      "comments": [
+                        {
+                          "id": 39419379,
+                          "level": 5,
+                          "user": "user_7832",
+                          "time": 1708266856,
+                          "time_ago": "12 hours ago",
+                          "content": "<p>Chiming in to say the page looks really good and professional! It’s definitely “enterprise level” in a good way, I was initially searching for a “pricing” tab lol.<p>Btw I see you mention potential AMD on windows support, would this include iGPUs? I’d love to use your app on my ryzen 7 laptop on its 780m. Thanks!",
+                          "comments": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39416207,
+          "level": 1,
+          "user": "sumedh",
+          "time": 1708230525,
+          "time_ago": "a day ago",
+          "content": "<p>Is this similar to LLM Studio?",
+          "comments": []
+        },
+        {
+          "id": 39413406,
+          "level": 1,
+          "user": "vorticalbox",
+          "time": 1708202833,
+          "time_ago": "a day ago",
+          "content": "<p>Any plans for a Linux client?",
+          "comments": [
+            {
+              "id": 39413663,
+              "level": 2,
+              "user": "chown",
+              "time": 1708204869,
+              "time_ago": "a day ago",
+              "content": "<p>Yes. I already have a local build that I am testing. Going to release it in a week or so.",
+              "comments": []
+            }
+          ]
+        },
+        {
+          "id": 39413889,
+          "level": 1,
+          "user": "attentive",
+          "time": 1708206686,
+          "time_ago": "a day ago",
+          "content": "<p>adding gemini API?",
+          "comments": [
+            {
+              "id": 39414084,
+              "level": 2,
+              "user": "chown",
+              "time": 1708208569,
+              "time_ago": "a day ago",
+              "content": "<p>Yes. I signed up for the API a couple of days ago and I am in the waitlist.",
+              "comments": [
+                {
+                  "id": 39415162,
+                  "level": 3,
+                  "user": "attentive",
+                  "time": 1708218865,
+                  "time_ago": "a day ago",
+                  "content": "<p>gemini-pro is available without a wait list. Go to AI studio to get a key.",
+                  "comments": [
+                    {
+                      "id": 39416126,
+                      "level": 4,
+                      "user": "BOOSTERHIDROGEN",
+                      "time": 1708229538,
+                      "time_ago": "a day ago",
+                      "content": "<p>Wait how to get that ? I just submit email on waitlist",
+                      "comments": [
+                        {
+                          "id": 39417021,
+                          "level": 5,
+                          "user": "attentive",
+                          "time": 1708241945,
+                          "time_ago": "19 hours ago",
+                          "content": "<p>waitlist is for ultra or 1.5, whatever, 1.0 pro is available<p>aistudio.google.com",
+                          "comments": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39413784,
+      "level": 0,
+      "user": "jameshart",
+      "time": 1708205929,
+      "time_ago": "a day ago",
+      "content": "<p>What is the rationale for so many of these ‘run it locally’ AI ports to run <i>as a server</i>?<p>Have developers forgotten that it’s actually possible to run code inside your UI process?<p>We see the same thing with stable diffusion runners as well as LLM hosts.<p>I don’t like running background services locally if I don’t need to. Why do these implementations all seem to operate that way?",
+      "comments": [
+        {
+          "id": 39413879,
+          "level": 1,
+          "user": "jmorgan",
+          "time": 1708206529,
+          "time_ago": "a day ago",
+          "content": "<p>This is a really interesting question. I think there&#x27;s definitely a world for both deployment models. Maybe a good analogy is database engines: both SQLite (a library) and Postgres (a long-running service) have widespread use cases with tradeoffs.",
+          "comments": [
+            {
+              "id": 39413908,
+              "level": 2,
+              "user": "jameshart",
+              "time": 1708206840,
+              "time_ago": "a day ago",
+              "content": "<p>But these are typically filling the usecases of <i>productivity</i> applications, not ‘engines’.<p>Microsoft Word doesn’t run its grammar checker as an external service and shunt JSON over a localhost socket to get spelling and style suggestions.<p>Photoshop doesn’t install a background service to host filters.<p>The closest pattern I can think of is the ‘language servers’ model used by IDEs to handle autosuggest - see <a href=\"https:&#x2F;&#x2F;microsoft.github.io&#x2F;language-server-protocol&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;microsoft.github.io&#x2F;language-server-protocol&#x2F;</a> - but the point of that is to enable many to many interop - multiple languages supporting multiple IDEs. Is that the expected usecase for local language assistants and image generators?",
+              "comments": [
+                {
+                  "id": 39414488,
+                  "level": 3,
+                  "user": "bri3d",
+                  "time": 1708211901,
+                  "time_ago": "a day ago",
+                  "content": "<p>Funny choice of example. You’ve always been able to use Word as a remote spellchecker over COM, and as of Windows 8, spellchecking is available system wide and runs in a separate process (again over COM) for sandboxing reasons.<p>JSON over TCP is perhaps a silly IPC mechanism for local services, but this kind of composition doesn’t seem unreasonable to me.",
+                  "comments": [
+                    {
+                      "id": 39415613,
+                      "level": 4,
+                      "user": "jameshart",
+                      "time": 1708223976,
+                      "time_ago": "a day ago",
+                      "content": "<p>&gt; use Word as a remote spellchecker over COM<p>That&#x27;s not how COM works. You can load Word&#x27;s spellchecker <i>into your process</i>.<p>Windows added a spellchecking API in Windows 8. I&#x27;ve not dug into the API in detail, but don&#x27;t see any indication that spellchecker providers run in a separate process (you can probably build one that works that way, but it&#x27;s not intrinsic to the provider model).",
+                      "comments": [
+                        {
+                          "id": 39415770,
+                          "level": 5,
+                          "user": "bri3d",
+                          "time": 1708225456,
+                          "time_ago": "a day ago",
+                          "content": "<p>Are you not familiar with out of process COM servers? A lot of Office automation is out of process, even inside of Office itself. Admittedly I’m not sure about the grammar checker specifically.<p>As for the Spellcheck API, external providers are explicitly out of proc: <a href=\"https:&#x2F;&#x2F;learn.microsoft.com&#x2F;en-us&#x2F;windows&#x2F;win32&#x2F;intl&#x2F;about-the-spell-checker-api\" rel=\"nofollow\">https:&#x2F;&#x2F;learn.microsoft.com&#x2F;en-us&#x2F;windows&#x2F;win32&#x2F;intl&#x2F;about-t...</a><p>Anyway, my point still stands - building desktop apps using composition over RPC is neither new nor a bad idea, although HTTP might not be the best RPC mechanism (although… neither was COM…)",
+                          "comments": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 39414982,
+                  "level": 3,
+                  "user": "pseudosavant",
+                  "time": 1708217170,
+                  "time_ago": "a day ago",
+                  "content": "<p>The language server pattern is actually a very good comparison. The web service + web UI approach enables you do use different local and&#x2F;or cloud AI services. That is why most of these servers&#x2F;services support the OpenAI API.",
+                  "comments": [
+                    {
+                      "id": 39415635,
+                      "level": 4,
+                      "user": "jameshart",
+                      "time": 1708224183,
+                      "time_ago": "a day ago",
+                      "content": "<p>Which means most of these servers limit themselves to the capabilities exposed by the OpenAI API.",
+                      "comments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39414021,
+          "level": 1,
+          "user": "psytrx",
+          "time": 1708207937,
+          "time_ago": "a day ago",
+          "content": "<p>In addition to the initial loading time noted by the other posters:<p>You may want to use the same inference engine or even the same LLM for multiple purposes in multiple applications.<p>Also, which is a huge factor in my opinion, is getting your machine, environment and OS into a state that can&#x27;t run the models efficiently. It wasn&#x27;t trivial to me. Putting all this complexity inside a container (and therefore &quot;server&quot;) helps tremendously, a) in setting everything up initially and b) keeping up with the constant improvements and updates that are happening regularly.",
+          "comments": []
+        },
+        {
+          "id": 39413805,
+          "level": 1,
+          "user": "mattnewton",
+          "time": 1708206060,
+          "time_ago": "a day ago",
+          "content": "<p>It doesn’t make sense to load the weights on the fly- that is gigabits of memory that has to be shuffled around. Instead, you have a long running process that serves up lots of predictions<p>(edit: someday soon, probably to multiple clients too!)",
+          "comments": [
+            {
+              "id": 39413817,
+              "level": 2,
+              "user": "nightfly",
+              "time": 1708206132,
+              "time_ago": "a day ago",
+              "content": "<p>So better to have GiBs of memory consumed by it constantly?",
+              "comments": [
+                {
+                  "id": 39413840,
+                  "level": 3,
+                  "user": "mattnewton",
+                  "time": 1708206272,
+                  "time_ago": "a day ago",
+                  "content": "<p>If you don’t have that memory to spare you can’t run this locally anyways, and keeping it in memory is the only way to have a fast experience. Paying the model loading cost repeatedly sucks.",
+                  "comments": [
+                    {
+                      "id": 39413878,
+                      "level": 4,
+                      "user": "jameshart",
+                      "time": 1708206489,
+                      "time_ago": "a day ago",
+                      "content": "<p>Why would linking llama.cpp into a UI application lead to incurring the model loading cost repeatedly?",
+                      "comments": [
+                        {
+                          "id": 39413925,
+                          "level": 5,
+                          "user": "mattnewton",
+                          "time": 1708207056,
+                          "time_ago": "a day ago",
+                          "content": "<p>It would be loaded repeatedly if the ui is opened and closed repeatedly. You can achieve the same “long running server + short running ui window” with multiple threads or processes all linked into one binary if you want of course. This way (with a separate server) seems simpler to me (and has the added benefit that multiple applications could easily call into the “server” if needed)",
+                          "comments": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 39413814,
+              "level": 2,
+              "user": "jameshart",
+              "time": 1708206114,
+              "time_ago": "a day ago",
+              "content": "<p>Local UI applications <i>are</i> long running processes normally",
+              "comments": []
+            }
+          ]
+        },
+        {
+          "id": 39413896,
+          "level": 1,
+          "user": "imiric",
+          "time": 1708206761,
+          "time_ago": "a day ago",
+          "content": "<p>This is a good thing IMO. I don&#x27;t have a very powerful laptop or workstation, but do have a multi-GPU headless server. These projects allow me to experiment with LLMs on my server, and expose an API and web UI to my LAN.",
+          "comments": []
+        },
+        {
+          "id": 39414191,
+          "level": 1,
+          "user": "lolinder",
+          "time": 1708209374,
+          "time_ago": "a day ago",
+          "content": "<p>In addition to everything that everyone else has said: I run Ollama on a large gaming PC for speed but want to be able to use the models from elsewhere in the house. So I run Open-WebUI at chat.domain.example and Ollama at api.chat.domain.example (both only accessible within my local network).<p>With this setup I can use my full-speed local models from both my laptop and my phone with the web UI, and my raspberry pi that&#x27;s running my experimental voice assistant can query Ollama through the API endpoints, all at the full speed enabled by my gaming GPU.<p>The same logic goes for my Stable Diffusion setup.",
+          "comments": []
+        },
+        {
+          "id": 39414859,
+          "level": 1,
+          "user": "vunderba",
+          "time": 1708216035,
+          "time_ago": "a day ago",
+          "content": "<p>Because it adds flexibility. By decoupling the frontend from the backend it&#x27;s much easier for other devs not directly affiliated with the server repo (e.g. Ollama) to design new frontends that can connect to it.<p>I also think it allows experts to focus on what they are good at. Some people have a really keen eye for aesthetics and can design amazing front and experiences, and some people are the exact opposite and prefer to work on the backend.<p>Additionally, since it runs as a server, I can place it on a powerful headless machine that I have and can access that easily from significantly less powerful devices such as my phone and laptop.",
+          "comments": []
+        },
+        {
+          "id": 39413953,
+          "level": 1,
+          "user": "sgt101",
+          "time": 1708207359,
+          "time_ago": "a day ago",
+          "content": "<p>Because running it locally really means running it on a cloud server that you own and is called by other server that you own. This gives you the ability to make the interfaces lightweight and most importantly to not pay premiums to model servers.",
+          "comments": [
+            {
+              "id": 39413985,
+              "level": 2,
+              "user": "jameshart",
+              "time": 1708207597,
+              "time_ago": "a day ago",
+              "content": "<p>No, running it locally means running it on my laptop.<p>My Mac M2 is quite capable of running stable diffusion XL models and 30M parameter. LLMs under llama.cpp.<p>What I don’t like is the trend towards the way to do that being to open up network listeners with no authentication on them.",
+              "comments": [
+                {
+                  "id": 39414092,
+                  "level": 3,
+                  "user": "teaearlgraycold",
+                  "time": 1708208627,
+                  "time_ago": "a day ago",
+                  "content": "<p>Bind to localhost then",
+                  "comments": []
+                },
+                {
+                  "id": 39419336,
+                  "level": 3,
+                  "user": "karolist",
+                  "time": 1708266468,
+                  "time_ago": "12 hours ago",
+                  "content": "<p>lmstudio my friend",
+                  "comments": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39416468,
+          "level": 1,
+          "user": "andersa",
+          "time": 1708234037,
+          "time_ago": "21 hours ago",
+          "content": "<p>I personally find it very useful, because it allows me to run the inference server on a powerful remote server while running the UI locally on a laptop or tablet.",
+          "comments": []
+        },
+        {
+          "id": 39415059,
+          "level": 1,
+          "user": "Kuinox",
+          "time": 1708217892,
+          "time_ago": "a day ago",
+          "content": "<p>I&#x27;ll probably uses that because the Rust binding to llamacpp doesn&#x27;t works on windows (well, cpu only works, so not usable).  \nPython is broken (can&#x27;t install the deps)<p>Also mind that loading theses models take dozens of seconds, and you can only load one at a time on your machine, so if you have multiple programs that want to run theses models, it make sense to delegate this job to another program that the user can control.",
+          "comments": []
+        },
+        {
+          "id": 39415012,
+          "level": 1,
+          "user": "ijustlovemath",
+          "time": 1708217420,
+          "time_ago": "a day ago",
+          "content": "<p>Not mentioned yet: you can &quot;mitm&quot; existing APIs, like OpenAI, so that you can use existing applications with Ollama without changing your code.<p>Really clever, IMO! I was also mystified by the choice until I saw that use case.",
+          "comments": []
+        },
+        {
+          "id": 39414510,
+          "level": 1,
+          "user": "kaliqt",
+          "time": 1708212096,
+          "time_ago": "a day ago",
+          "content": "<p>Heavy compute. Often you might need to outsource the model to another PC and also because it&#x27;s heavy compute and general models, multiple apps use the same model at the same time.",
+          "comments": []
+        },
+        {
+          "id": 39414319,
+          "level": 1,
+          "user": "justsomehnguy",
+          "time": 1708210477,
+          "time_ago": "a day ago",
+          "content": "<p>&gt; I don’t like running background services locally if I don’t need to. Why do these implementations all seem to operate that way?<p>Because it&#x27;s now a simple REST-like query to interact with that server.<p>Default model of running the binary and capturing it&#x27;s output would mean you would reload everything <i>each time</i>. Of course, you can write a master process what would actually perform the queries and have a separate executable for querying that master process... wait, you just invented a server.",
+          "comments": [
+            {
+              "id": 39414435,
+              "level": 2,
+              "user": "jameshart",
+              "time": 1708211430,
+              "time_ago": "a day ago",
+              "content": "<p>I’m not sure what this ‘default model of running a binary and capturing its output’ is that you’re talking about.<p>Aren’t people mostly running browser frontends in front of these to provide a persistent UI - a chat interface or an image workspace or something?<p>sure, if you’re running a lot of little command line tools that need access to an LLM a server makes sense but what I don’t understand is why that isn’t a <i>niche</i> way of distributing these things - instead it seems to be the default.",
+              "comments": [
+                {
+                  "id": 39415050,
+                  "level": 3,
+                  "user": "justsomehnguy",
+                  "time": 1708217831,
+                  "time_ago": "a day ago",
+                  "content": "<p>&gt;  I’m not sure what this ‘default model of running a binary and capturing its output’ is that you’re talking about.<p>Did you ever used a computer?<p><pre><code>    PS C:\\Users\\Administrator\\AppData\\Local\\Programs\\Ollama&gt; .&#x2F;ollama.exe run llama2:7b &quot;say hello&quot; --verbose\n    Hello! How can I help you today?\n\n    total duration:       35.9150092s\n    load duration:        1.7888ms\n    prompt eval duration: 1.941793s\n    prompt eval rate:     0.00 tokens&#x2F;s\n    eval count:           10 token(s)\n    eval duration:        16.988289s\n    eval rate:            0.59 tokens&#x2F;s\n</code></pre>\nBut I feel like you are here just to troll around without a merit or a target.",
+                  "comments": [
+                    {
+                      "id": 39415535,
+                      "level": 4,
+                      "user": "jameshart",
+                      "time": 1708222915,
+                      "time_ago": "a day ago",
+                      "content": "<p>If you just check out <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ggerganov&#x2F;llama.cpp\">https:&#x2F;&#x2F;github.com&#x2F;ggerganov&#x2F;llama.cpp</a> and run make, you’ll wind up with an executable called ‘main’ that lets you run any gguf language model you choose. Then:<p>.&#x2F;main -m .&#x2F;models&#x2F;30B&#x2F;llama-30b.Q4_K_M.gguf --prompt “say hello”<p>On my M2 MacBook, the first run takes a few seconds before it produces anything, but after that subsequent runs start outputting tokens immediately.<p>You can run LLM models right inside a short lived process.<p>But the <i>majority</i> of humans don’t want to use a single execution of a command line to access LLM completions. They want to run a program that lets them interact with an LLM. And to do that they will likely start and leave running a long-lived process with UI state - which can also serve as a host for a longer lived LLM context.<p>Neither usecase particularly seems to need a server to function. My curiosity about why people are packaging these things up like that is completely genuine.<p>Last run of llama.cpp main off my command line:<p><pre><code>   llama_print_timings:        load time =     871.43 ms\n   llama_print_timings:      sample time =      20.39 ms &#x2F;   259 runs   (    0.08 ms per token, 12702.31 tokens per second)\n   llama_print_timings: prompt eval time =     397.77 ms &#x2F;     3 tokens (  132.59 ms per token,     7.54 tokens per second)\n   llama_print_timings:        eval time =   20079.05 ms &#x2F;   258 runs   (   77.83 ms per token,    12.85 tokens per second)\n   llama_print_timings:       total time =   20534.77 ms &#x2F;   261 tokens</code></pre>",
+                      "comments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39413883,
+          "level": 1,
+          "user": "api",
+          "time": 1708206594,
+          "time_ago": "a day ago",
+          "content": "<p>The main reason I see is to use the same AI engine for multiple things like VSCode plugins, UI apps, etc.<p>That being said I use LM Studio which runs as a UI and allows you to start a local server for coding and editor plugins.<p>I can run Deepseek Coder in VSCode locally on an M1 Max and it’s actually useful. It’ll just eat the battery quickly if it’s not plugged in since it really slams the GPU. It’s about the only thing I use that will make the M1 make audible fan noise.",
+          "comments": []
+        },
+        {
+          "id": 39417981,
+          "level": 1,
+          "user": "imtringued",
+          "time": 1708252962,
+          "time_ago": "16 hours ago",
+          "content": "<p>You want electron? That is how you get electron!",
+          "comments": []
+        },
+        {
+          "id": 39414752,
+          "level": 1,
+          "user": "taneq",
+          "time": 1708214692,
+          "time_ago": "a day ago",
+          "content": "<p>You have a beefy computer with lots of vram for testing locally, and then once that’s running you want to use the same thing from other computers or from web servers etc. that can’t run the models themselves.",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": 39412564,
+      "level": 0,
+      "user": "hat_tr1ck",
+      "time": 1708197948,
+      "time_ago": "a day ago",
+      "content": "<p>Had no idea Windows users had no access to Ollama, feels like only a few years ago we Mac users would have been the ones having to wait",
+      "comments": [
+        {
+          "id": 39412704,
+          "level": 1,
+          "user": "mil22",
+          "time": 1708198776,
+          "time_ago": "a day ago",
+          "content": "<p>It has worked just fine under WSL for many months now, including full GPU support, though that&#x27;s not as convenient for most. Native Windows support is icing on the cake.",
+          "comments": [
+            {
+              "id": 39413685,
+              "level": 2,
+              "user": "jmorgan",
+              "time": 1708205077,
+              "time_ago": "a day ago",
+              "content": "<p>Indeed, WSL has surprisingly good GPU passthrough and AVX instruction support, which makes running models fast albeit the virtualization layer. WSL comes with it&#x27;s own setup steps and performance considerations (not to mention quite a few folks are still using WSL 1 in their workflow), and so a lot of folks asked for a pre-built Windows version that runs natively!",
+              "comments": []
+            }
+          ]
+        },
+        {
+          "id": 39412718,
+          "level": 1,
+          "user": "hu3",
+          "time": 1708198858,
+          "time_ago": "a day ago",
+          "content": "<p>I&#x27;ve been running Ollama in Windows WSL for some time now.<p>It&#x27;s x86 Linux after all. Everything just works.",
+          "comments": [
+            {
+              "id": 39412913,
+              "level": 2,
+              "user": "baq",
+              "time": 1708199952,
+              "time_ago": "a day ago",
+              "content": "<p>There’s some magic with wsl gpu drivers.",
+              "comments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39413915,
+      "level": 0,
+      "user": "crooked-v",
+      "time": 1708206919,
+      "time_ago": "a day ago",
+      "content": "<p>I&#x27;m curious what people think of the non-open-source LM Studio (<a href=\"https:&#x2F;&#x2F;lmstudio.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;lmstudio.ai</a>) compared to Ollama.",
+      "comments": [
+        {
+          "id": 39414093,
+          "level": 1,
+          "user": "Eisenstein",
+          "time": 1708208628,
+          "time_ago": "a day ago",
+          "content": "<p>Likes:<p>* Super easy setup<p>* One-click download and load models&#x2F;weights<p>* Works great<p>Dislikes:<p>* throws weights (in Windows) in &#x2F;users&#x2F;username&#x2F;.cache in a proprietary directory structure, eating up tens of gigs without telling you or letting you share them with other clients<p>* won&#x27;t let you import models you download yourself<p>* Search function is terrible<p>* I hate how it deals with instance settings",
+          "comments": [
+            {
+              "id": 39415264,
+              "level": 2,
+              "user": "attentive",
+              "time": 1708219840,
+              "time_ago": "a day ago",
+              "content": "<p>&gt; * won&#x27;t let you import models you download yourself<p>you can drop GGUF in the models folder following its structure and LM Studio will pick it up.<p>What I wish LMS and others improve on is downloading models. At the very least they should support resume and retry of failed downloads. Also multistream would help. Huggingface CDN isn&#x27;t the most reliable and redownloading failed multigigabytes models isn&#x27;t fun. Of course I could do it manually but then it&#x27;s not &quot;one-click download&quot;.",
+              "comments": []
+            },
+            {
+              "id": 39415633,
+              "level": 2,
+              "user": "spamfilter247",
+              "time": 1708224183,
+              "time_ago": "a day ago",
+              "content": "<p>Does anyone know where it stores GGUFs on macOS?",
+              "comments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39411985,
+      "level": 0,
+      "user": "trelane",
+      "time": 1708194507,
+      "time_ago": "a day ago",
+      "content": "<p>Looks like it&#x27;s already available on Linux &amp; Mac. The change is that they&#x27;re adding Windows: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama\">https:&#x2F;&#x2F;github.com&#x2F;ollama&#x2F;ollama</a>",
+      "comments": []
+    },
+    {
+      "id": 39414237,
+      "level": 0,
+      "user": "xanderlewis",
+      "time": 1708209806,
+      "time_ago": "a day ago",
+      "content": "<p>I just ran this on my new Mac Mini (installing the llama2 model) and got a full-blown kernel panic. What?!",
+      "comments": [
+        {
+          "id": 39414504,
+          "level": 1,
+          "user": "asabla",
+          "time": 1708212048,
+          "time_ago": "a day ago",
+          "content": "<p>This may happen if you chose a model which is larger then your available unified memory.<p>Which version of llama2 did you choose? And how much unified memory do you have?",
+          "comments": [
+            {
+              "id": 39414638,
+              "level": 2,
+              "user": "xanderlewis",
+              "time": 1708213642,
+              "time_ago": "a day ago",
+              "content": "<p>Just the default (7B parameters?), which apparently requires at least 8GB of RAM, which is how much I have. It seems to be running fine now... it&#x27;s just the installation process that caused it to completely die.",
+              "comments": [
+                {
+                  "id": 39416220,
+                  "level": 3,
+                  "user": "risho",
+                  "time": 1708230662,
+                  "time_ago": "a day ago",
+                  "content": "<p>if it requires 8gb of ram and you have 8gb of ram that leaves nothing left for the other processes that need to run and the gpu which also shares the ram.",
+                  "comments": [
+                    {
+                      "id": 39417540,
+                      "level": 4,
+                      "user": "xanderlewis",
+                      "time": 1708248136,
+                      "time_ago": "17 hours ago",
+                      "content": "<p>I’m just surprised that the process can successfully eat all of the memory so badly that the OS actually dies. I thought there was protection for stuff like that.",
+                      "comments": [
+                        {
+                          "id": 39419348,
+                          "level": 5,
+                          "user": "karolist",
+                          "time": 1708266550,
+                          "time_ago": "12 hours ago",
+                          "content": "<p>There&#x27;s not, mlock() will crash your machine from userland happily",
+                          "comments": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39413122,
+      "level": 0,
+      "user": "tydunn",
+      "time": 1708201107,
+      "time_ago": "a day ago",
+      "content": "<p>I&#x27;ve been playing around with it for the last couple days on my Windows machine, using it for local tab-autocomplete in VS Code, and it&#x27;s been just as good as it is on my Mac",
+      "comments": [
+        {
+          "id": 39413474,
+          "level": 1,
+          "user": "notsylver",
+          "time": 1708203398,
+          "time_ago": "a day ago",
+          "content": "<p>What do you use for tab-autocomplete in VS Code? I&#x27;ve been trying to find something that can replace copilot, just because it sounds fun. Everyhing I&#x27;ve found seems more aimed at entering a prompt and having it refactor code, not completing as you write with no other input.",
+          "comments": [
+            {
+              "id": 39414856,
+              "level": 2,
+              "user": "sqs",
+              "time": 1708216022,
+              "time_ago": "a day ago",
+              "content": "<p>Cody (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;sourcegraph&#x2F;cody\">https:&#x2F;&#x2F;github.com&#x2F;sourcegraph&#x2F;cody</a>) supports using Ollama for autocomplete in VS Code. See the release notes at <a href=\"https:&#x2F;&#x2F;sourcegraph.com&#x2F;blog&#x2F;cody-vscode-1.1.0-release\" rel=\"nofollow\">https:&#x2F;&#x2F;sourcegraph.com&#x2F;blog&#x2F;cody-vscode-1.1.0-release</a> for instructions. And soon it&#x27;ll support Ollama for chat&#x2F;refactoring as well (<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;sqs&#x2F;status&#x2F;1750045006382162346&#x2F;video&#x2F;1\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;sqs&#x2F;status&#x2F;1750045006382162346&#x2F;video&#x2F;1</a>).<p>Disclaimer: I work on Cody and hacked on this feature.",
+              "comments": []
+            },
+            {
+              "id": 39413508,
+              "level": 2,
+              "user": "tydunn",
+              "time": 1708203598,
+              "time_ago": "a day ago",
+              "content": "<p>I use Continue.dev&#x27;s new tab-autocomplete [1] (disclaimer: I am one of the authors of this open-source project)<p>[1] <a href=\"https:&#x2F;&#x2F;continue.dev&#x2F;docs&#x2F;walkthroughs&#x2F;tab-autocomplete\">https:&#x2F;&#x2F;continue.dev&#x2F;docs&#x2F;walkthroughs&#x2F;tab-autocomplete</a>",
+              "comments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39413440,
+      "level": 0,
+      "user": "orion138",
+      "time": 1708203118,
+      "time_ago": "a day ago",
+      "content": "<p>Is this people’s preferred way to run and develop on top of local models?<p>Any other must learn tools?",
+      "comments": []
+    },
+    {
+      "id": 39419599,
+      "level": 0,
+      "user": "ralphc",
+      "time": 1708268639,
+      "time_ago": "12 hours ago",
+      "content": "<p>I&#x27;m an Elixir fanboy so I&#x27;ll use that as an example. I&#x27;ve purchased a lot of books on Elixir in PDF format, commercial products so they&#x27;re not available publicly. Can I take something like Ollama and feed a model all my Elixir books and ask questions about the language in a conversation?",
+      "comments": []
+    },
+    {
+      "id": 39415349,
+      "level": 0,
+      "user": "waldrews",
+      "time": 1708220989,
+      "time_ago": "a day ago",
+      "content": "<p>Can&#x27;t seem to get it to see my NVIDIA Quadro P3000 GPU.  Is it too old to make a difference?",
+      "comments": [
+        {
+          "id": 39415589,
+          "level": 1,
+          "user": "jmorgan",
+          "time": 1708223635,
+          "time_ago": "a day ago",
+          "content": "<p>Ollama should support anything CUDA compute capability 5+ (P3000 is 6.1) <a href=\"https:&#x2F;&#x2F;developer.nvidia.com&#x2F;cuda-gpus\" rel=\"nofollow\">https:&#x2F;&#x2F;developer.nvidia.com&#x2F;cuda-gpus</a>. Possible to shoot me an email? (in my HN bio). The `server` logs should have information regarding GPU detection in the first 10-20 lines or so that can help debug. Sorry!",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": 39412085,
+      "level": 0,
+      "user": "thrdbndndn",
+      "time": 1708195105,
+      "time_ago": "a day ago",
+      "content": "<p>This is the first time I use llama2 (I used the 13B one) -- and it absolutely struggles with Chinese despite it says &quot;I am capable of understanding Chinese and English&quot; when asking &quot;what languages do you understand&quot;.<p>Is this expected?<p>See an example below, it can&#x27;t stay in Chinese at all.<p><pre><code>    &gt;&gt;&gt; 你知道海豚吗\n\n    Ah, 海豚 (hǎitún) is a type of dolphin!  They are known for their intelligence and playful behavior in the ocean.\n    Is there anything else you would like to know or discuss?\n\n    &gt;&gt;&gt; 请用中文回答\n\n    Ah, I see!  As a 13b model, I can only communicate in Chinese. Here&#x27;s my answer:\n\n    海豚是一种智能和活泼的 marine mammal他们主要生活在海洋中。它们有着柔软的皮服、圆润的脸和小的耳朵。他们是 ocean 中的一 种美丽和 интерес的生物很多人喜欢去看他们的表演。</code></pre>",
+      "comments": [
+        {
+          "id": 39415239,
+          "level": 1,
+          "user": "int_19h",
+          "time": 1708219517,
+          "time_ago": "a day ago",
+          "content": "<p>Never, ever make assumptions about what the model can and cannot do based on what it tells you itself. This is one area where they hallucinate <i>a lot</i>, even top-of-the-line stuff like GPT-4 (e.g. it will happily &quot;translate&quot; languages that it has very little understanding of).",
+          "comments": [
+            {
+              "id": 39417442,
+              "level": 2,
+              "user": "thrdbndndn",
+              "time": 1708247000,
+              "time_ago": "18 hours ago",
+              "content": "<p>Well I don&#x27;t assume, I asked it explicitly what language it understands.",
+              "comments": [
+                {
+                  "id": 39423626,
+                  "level": 3,
+                  "user": "int_19h",
+                  "time": 1708292126,
+                  "time_ago": "5 hours ago",
+                  "content": "<p>You assumed that it knows which languages it understands, or that it knows that it doesn&#x27;t know. This assumption is generally incorrect.",
+                  "comments": []
+                },
+                {
+                  "id": 39418776,
+                  "level": 3,
+                  "user": "codingdave",
+                  "time": 1708261976,
+                  "time_ago": "14 hours ago",
+                  "content": "<p>Taking any answer from an LLM as accurate is in and of itself an assumption.",
+                  "comments": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39412118,
+          "level": 1,
+          "user": "mchiang",
+          "time": 1708195324,
+          "time_ago": "a day ago",
+          "content": "<p>There is the qwen 1.5 model from Alibaba team.<p><a href=\"https:&#x2F;&#x2F;ollama.com&#x2F;library&#x2F;qwen\">https:&#x2F;&#x2F;ollama.com&#x2F;library&#x2F;qwen</a><p>ollama run qwen:0.5b\nollama run qwen:1.8b\nollama run qwen:4b\nollama run qwen:7b\nollama run qwen:14b\nollama run qwen:72b<p>I would only recommend smaller parameter sizes if you are fine tuning with it.",
+          "comments": []
+        },
+        {
+          "id": 39414678,
+          "level": 1,
+          "user": "xanderlewis",
+          "time": 1708214000,
+          "time_ago": "a day ago",
+          "content": "<p>Its Japanese ability is even worse... and by that I mean it&#x27;s basically nonexistent. You have to really persuade it to speak the language, and even then it&#x27;s very reluctant and outputs complete gibberish most of the time.<p>Interestingly, trying the &#x27;llama2:text&#x27; (the raw model without the fine tuning for chat) gives much better results, although still quite weird. Maybe the fine tuning process — since it presumably focuses on English — destroys what little Japanese ability was in there to begin with.<p>(of course, none of this is surprising; as far as I know it doesn&#x27;t claim to be able to communicate in Japanese.)",
+          "comments": []
+        },
+        {
+          "id": 39416246,
+          "level": 1,
+          "user": "cyp0633",
+          "time": 1708230924,
+          "time_ago": "a day ago",
+          "content": "<p>Mistral-7B answers in Chinese only when I explicitly tells it to do so",
+          "comments": []
+        },
+        {
+          "id": 39412773,
+          "level": 1,
+          "user": "visarga",
+          "time": 1708199187,
+          "time_ago": "a day ago",
+          "content": "<p>get yourself a proper Chinese model from China, they are hosted in the Ollama model zoo as well",
+          "comments": [
+            {
+              "id": 39412904,
+              "level": 2,
+              "user": "thrdbndndn",
+              "time": 1708199892,
+              "time_ago": "a day ago",
+              "content": "<p>That&#x27;s true. I was more just out of curiosity because ChatGPT has <i>great</i> Chinese capability even the 3.5 version.",
+              "comments": []
+            }
+          ]
+        },
+        {
+          "id": 39415196,
+          "level": 1,
+          "user": "charcircuit",
+          "time": 1708219135,
+          "time_ago": "a day ago",
+          "content": "<p>&gt;Is this expected?<p>Yes, the training was primarily focused on English text and performance on English prompts. Only 0.13% of the training data was Chinese.<p>&gt;Does Llama 2 support other languages outside of English?<p>&gt;The model was primarily trained on English with a bit of additional data from 27 other languages. We do not expect the same level of performance in these languages as in English.<p><a href=\"https:&#x2F;&#x2F;llama.meta.com&#x2F;llama2&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;llama.meta.com&#x2F;llama2&#x2F;</a>",
+          "comments": []
+        },
+        {
+          "id": 39414120,
+          "level": 1,
+          "user": "Eisenstein",
+          "time": 1708208775,
+          "time_ago": "a day ago",
+          "content": "<p>Give Yi a shot.",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": 39414301,
+      "level": 0,
+      "user": "justsomehnguy",
+      "time": 1708210302,
+      "time_ago": "a day ago",
+      "content": "<p>JUST as I wanted to dabble on that and try myself installing all those ... requirements.<p>And now this article.<p>Tested, yes, it&#x27;s amusing on how simple it is and it works.<p>The only trouble I see is what again there is no option to select the destination of the installer (so if you have a server and multiple users they all end with a personal copy, instead of the global one).",
+      "comments": []
+    }
+  ],
+  "comments_count": 142
+}
